@@ -5,6 +5,17 @@ body {
     margin: 0px;
 }
 
+header{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.handlevogn{
+    width: 80px;
+}
+
 #Meny-Container {
     margin-top: 100px;
     display: flex;
@@ -30,8 +41,15 @@ body {
     transition: all 180ms ease-in;
 }
 
+.ProduktBilde-Container {
+    width: 330px;
+    height: 203px;
+    text-align: center;
+}
+
 .Tekst-Container {
     width: 330px;
+    height: 200px;
     text-align: left;
 }
 
@@ -46,3 +64,5 @@ body {
     color: black;
     font-weight: 600;
 }
+
+
