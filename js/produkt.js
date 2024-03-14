@@ -16,13 +16,14 @@ class Produkt {
 
         this.Produktbilde = document.createElement("img");
         this.Produktbilde.src = this.bilde;
-        this.Produktbilde.style.width = "250px"
+        this.Produktbilde.style.width = "200px"
 
         this.TekstContainer = document.createElement("div");
-
+        this.TekstContainer.classList.add("Tekst-Container")
         
         this.tittel = document.createElement("p");
         this.tittel.textContent = this.navn;
+        this.tittel.classList.add("ProduktTittel")
 
         this.forklaring = document.createElement("p");
         this.forklaring.textContent = this.beskrivelse;
