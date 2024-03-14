@@ -1,32 +1,26 @@
 [
     {
-        "ProduktNavn":"",
-        "ProduktBeskrivelse":"",
-        "Bilde":"",
-        "ProduktPris":""
+        "ProduktNavn":"Hamburger",
+        "ProduktBeskrivelse":"Dette er en helt forferdelig burger",
+        "Bilde":"/assets/test123.jpg",
+        "ProduktPris":"299-, KR"
     },
     {
-        "ProduktNavn":"",
-        "ProduktBeskrivelse":"",
-        "Bilde":"",
-        "ProduktPris":""
+        "ProduktNavn":"Sliten Cheeseburger",
+        "ProduktBeskrivelse":"Denne burgeren smaker mel og vann",
+        "Bilde":"/assets/slitncheese.jpg",
+        "ProduktPris":"119-, KR"
     },
     {
-        "ProduktNavn":"",
-        "ProduktBeskrivelse":"",
-        "Bilde":"",
-        "ProduktPris":""
+        "ProduktNavn":"Sliten Veggieburger",
+        "ProduktBeskrivelse":"Denne burgeren har en unik smak av kunstig leverpostei",
+        "Bilde":"/assets/slitnveggie.jpg",
+        "ProduktPris":"119-, KR"
     },
     {
-        "ProduktNavn":"",
-        "ProduktBeskrivelse":"",
-        "Bilde":"",
-        "ProduktPris":""
-    },
-    {
-        "ProduktNavn":"",
-        "ProduktBeskrivelse":"",
-        "Bilde":"",
-        "ProduktPris":""
+        "ProduktNavn":"Sliten Classicburger",
+        "ProduktBeskrivelse":"Denne burgeren smaker godt",
+        "Bilde":"/assets/slitenclassic.jpg",
+        "ProduktPris":"99-, KR"
     }
 ]
