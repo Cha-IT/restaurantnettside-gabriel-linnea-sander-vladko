@@ -14,9 +14,13 @@ class Produkt {
         this.container = document.createElement("div");
         this.container.classList.add("Produkt-Container")
 
+        this.Bildecontainer = document.createElement("div");
+        this.Bildecontainer.classList.add("ProduktBilde-Container");
+
         this.Produktbilde = document.createElement("img");
         this.Produktbilde.src = this.bilde;
         this.Produktbilde.style.width = "200px"
+
 
         this.TekstContainer = document.createElement("div");
         this.TekstContainer.classList.add("Tekst-Container")
@@ -28,12 +32,16 @@ class Produkt {
         this.forklaring = document.createElement("p");
         this.forklaring.textContent = this.beskrivelse;
 
+        this.betalingContainer = document.createElement("div");        
         this.price = document.createElement("p");
         this.price.textContent = this.pris;
+        this.price.classList.add("Prislapp")
+        this.shoppi
 
 
+        this.Bildecontainer.appendChild(this.Produktbilde)
         this.TekstContainer.append(this.tittel, this.forklaring, this.price)
-        this.container.append(this.Produktbilde, this.TekstContainer);
+        this.container.append(this.Bildecontainer, this.TekstContainer);
         menyEl.appendChild(this.container)
     }
 }

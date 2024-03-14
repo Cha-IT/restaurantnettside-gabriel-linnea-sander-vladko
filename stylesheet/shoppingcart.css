@@ -1,11 +1,16 @@
+#ShoppingCart > img {
+    cursor: pointer;
+}
+
 #shoppingcartAlert {
     border-radius: 50%;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     background-color: red;
     position: relative;
-    top: -55px;
-    left: 35px;
+    top: -45px;
+    left: 25px;
+    cursor: pointer;
 }
 
 #shoppingcartAlert > p {
@@ -14,4 +19,5 @@
     top: -15px;
     left: 7.3px;
     color: white;
+    font-size: 14px;
 }
