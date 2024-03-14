@@ -101,7 +101,7 @@ header{
     cursor: pointer;
     position: relative;
     left: 101px;
-    top: 15px;
+    top: -8px;
     width: 30px;
     filter: invert();
 }
