@@ -10,6 +10,7 @@ header{
     justify-content: right;
     gap: 20px;
     font-size: 25px;
+    flex-wrap: wrap;
 }
 
 .handlevogn{
@@ -65,4 +66,9 @@ header{
     font-weight: 600;
 }
 
-
+footer{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
