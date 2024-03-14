@@ -34,3 +34,14 @@ body {
     flex-direction: column;
     align-items: flex-start;
 }
+
+header{
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.handlevogn{
+    width: 80px;
+}
