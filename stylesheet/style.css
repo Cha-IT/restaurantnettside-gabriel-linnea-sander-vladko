@@ -5,21 +5,79 @@ body {
     margin: 0px;
 }
 
+/*
+
+HEADER / NAVBAR
+
+*/
+
 header{
+    margin-top: 5px;
     display: flex;
-    justify-content: right;
-    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
     font-size: 25px;
 }
 
-.handlevogn{
+#Header-Logo {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Header-Logo > img {
+    width: 100px;
+    height: 100px;
+}
+
+#Logo{
     width: 80px;
     transition: transform .7s ease-in-out;
 }
 
-.handlevogn:hover {
+#Logo:hover {
     transform: rotate(360deg);
 }
+
+#Header-Logo > div {
+    position: relative;
+    top: -15px;
+    left: -10px;
+}
+
+#Header-Logo > div > p {
+    position: relative;
+    top: -35px;
+    font-size: 18px;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    left: -50px;
+    top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav > p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+/*
+
+MENY + PRODUKTER
+
+*/
+
 
 #Meny-Container {
     margin-top: 100px;
