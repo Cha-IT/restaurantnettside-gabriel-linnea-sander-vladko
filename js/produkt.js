@@ -44,16 +44,13 @@ class Produkt {
 
         this.addtoCart = document.createElement("div")
         
-        this.cartButton = document.createElement("button")
-        this.cartButton.classList.add("Betaling-Button", "AddCart")
-        
         this.cartImage = document.createElement("img");
         this.cartImage.src = "/assets/cartIcon.png";
         this.cartImage.classList.add("Betaling-Image", "AddCart");
     }
 
     appendProdukter(){
-        this.addtoCart.append(this.cartButton, this.cartImage)
+        this.addtoCart.append(this.cartImage)
         this.betalingContainer.append(this.price, this.addtoCart)
         this.Bildecontainer.appendChild(this.Produktbilde)
         this.TekstContainer.append(this.tittel, this.forklaring)

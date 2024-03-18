@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*
@@ -11,66 +11,64 @@ HEADER / NAVBAR
 
 */
 
-header{
-    margin-top: 5px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    font-size: 25px;
+header {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 25px;
 }
 
 #Header-Logo {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-family: "Poppins", sans-serif;
 }
 
 #Header-Logo > img {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
-#Logo{
-    width: 80px;
-    transition: transform .7s ease-in-out;
+#Logo {
+  width: 80px;
+  transition: transform 0.7s ease-in-out;
 }
 
 #Logo:hover {
-    transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 #Header-Logo > div {
-    position: relative;
-    top: -15px;
-    left: -10px;
+  position: relative;
+  top: -15px;
+  left: -10px;
 }
 
 #Header-Logo > div > p {
-    position: relative;
-    top: -35px;
-    font-size: 18px;
+  position: relative;
+  top: -35px;
+  font-size: 18px;
 }
 
 nav {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    position: relative;
-    left: -50px;
-    top: 15px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  position: relative;
+  left: -50px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
 }
 
 nav > p:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
-
-
 
 /*
 
@@ -78,90 +76,75 @@ MENY + PRODUKTER
 
 */
 
-
 #Meny-Container {
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .Produkt-Container {
-    transform: scale(1);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 1.0px 1.5px 1.5px 1.5px rgb(196, 192, 192);
+  transform: scale(1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 1px 1.5px 1.5px 1.5px rgb(196, 192, 192);
 }
 
 .Produkt-Container:hover {
-    transform: scale(1.08);
-    transition: all 180ms ease-in;
+  transform: scale(1.08);
+  transition: all 180ms ease-in;
 }
 
 .ProduktBilde-Container {
-    width: 300px;
-    height: 203px;
-    text-align: center;
+  width: 300px;
+  height: 203px;
+  text-align: center;
 }
 
 .Tekst-Container {
-    position: relative;
-    left: 2px;
-    width: 305px;
-    height: 170px;
-    text-align: left;
+  position: relative;
+  left: 2px;
+  width: 305px;
+  height: 170px;
+  text-align: left;
 }
 
 .Tekst-Container > p:nth-child(2) {
-    font-family: "Poppins";
-    font-size: 13px;
+  font-family: "Poppins";
+  font-size: 13px;
 }
 
 .ProduktTittel {
-    font-family: 'Poppins';
-    font-size: 16px;
-    color: black;
-    font-weight: 600;
+  font-family: "Poppins";
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
 }
 
 .Betaling-Container {
-    position: relative;
-    left: 10px;
-    display: flex;
-    flex-direction: row;
-    align-self: flex-start;
+  position: relative;
+  left: 10px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
 }
 
 .Prislapp {
-    font-family: 'Poppins';
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.Betaling-Button {
-    cursor: pointer;
-    position: relative;
-    left: 143px;
-    height: 50px;
-    border: 0px;
-    width: 50px;
-    border-radius: 8px;
-    background-color: rgb(39, 36, 36);
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .Betaling-Image {
-    cursor: pointer;
-    position: relative;
-    left: 101px;
-    top: -8px;
-    width: 30px;
-    filter: invert();
+  cursor: pointer;
+  position: relative;
+  left: 170px;
+  top: 20px;
+  width: 30px;
 }
-
-
