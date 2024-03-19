@@ -4,31 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sliten Pizza og Grill</title>
-    <link rel="stylesheet" href="/stylesheet/style.css">
-    <link rel="stylesheet" href="/stylesheet/shoppingcart.css">  </head>
+    <link rel="stylesheet" href="/stylesheet/style.css" />
+    <link rel="stylesheet" href="/stylesheet/shoppingcart.css" />
+  </head>
   <body>
     <header>
+      <div id="Header-Logo">
+        <img id="Logo" src="/assets/test123.jpg" alt="handle kurv" />
+        <div>
+          <h4>Pizzasnur AS</h4>
+          <p>En resturant for deg!</p>
+        </div>
+      </div>
+      <nav>
         <p>Meny</p>
         <p>Bestill</p>
         <p>Om oss</p>
-        <img class="handlevogn" src="/assets/test123.jpg" alt="handle kurv">
+        <div id="ShoppingCart">
+          <img src="/assets/shoppingcart.png" alt="" height="37px" />
+          <div id="shoppingcartAlert"><p id="CartNumber"></p></div>
+        </div>
+      </nav>
     </header>
 
-    <img src="" alt="frontpage"/>
-    
-    <div id="ShoppingCart">
-        <img src="/assets/shoppingcart.png" alt="" height="37px">
-        <div id="shoppingcartAlert"><p id="CartNumber"></p></div>
-    </div>
-    
+    <section id="ShoppingCart_Section">
+      <div id="ShoppingCart_Items">
+      </div>
+    </section>
+
+    <h1>Resturant med hjertefylte smaker</h1>
+    <img src="\assets\slitenmann.jpg" alt="sliten mann"/>
+
     <section>
       <div id="Meny-Container"></div>
     </section>
-    
-<h1>Resturant med hjertefylte smaker</h1>
 
-<img src="\assets\slitenmann.jpg" alt="sliten mann" />
-    
     <script src="/js/produkt.js"></script>
     <script src="/js/cart.js"></script>
     

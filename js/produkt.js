@@ -8,6 +8,8 @@ class Produkt {
         this.pris = this.meny.ProduktPris;
         this.bilde = this.meny.Bilde
         this.opprettProdukt();
+        this.appendProdukter();
+        this.Handlekurv();
     }
 
     opprettProdukt() {
@@ -31,18 +33,37 @@ class Produkt {
 
         this.forklaring = document.createElement("p");
         this.forklaring.textContent = this.beskrivelse;
+        this.forklaring.classList.add("Produkt_Informasjon")
 
-        this.betalingContainer = document.createElement("div");        
+        this.betalingContainer = document.createElement("div");
+        this.betalingContainer.classList.add("Betaling-Container")
+
         this.price = document.createElement("p");
         this.price.textContent = this.pris;
         this.price.classList.add("Prislapp")
-        this.shoppi
 
+        this.addtoCart = document.createElement("div")
+        
+        this.cartImage = document.createElement("img");
+        this.cartImage.src = "/assets/cartIcon.png";
+        this.cartImage.classList.add("Betaling-Image", "AddCart");
+    }
 
+    appendProdukter(){
+        this.addtoCart.append(this.cartImage)
+        this.betalingContainer.append(this.price, this.addtoCart)
         this.Bildecontainer.appendChild(this.Produktbilde)
-        this.TekstContainer.append(this.tittel, this.forklaring, this.price)
-        this.container.append(this.Bildecontainer, this.TekstContainer);
+        this.TekstContainer.append(this.tittel, this.forklaring)
+        this.container.append(this.Bildecontainer, this.TekstContainer, this.betalingContainer);
         menyEl.appendChild(this.container)
+    }
+
+    Handlekurv(){
+        const CartBtn = document.querySelectorAll(".AddCart");
+
+        CartBtn.forEach(produkt => {
+            produkt.addEventListener("click", LeggtilProdukt)
+        });
     }
 }
 
