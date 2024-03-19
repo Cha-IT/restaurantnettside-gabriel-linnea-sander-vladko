@@ -148,3 +148,11 @@ MENY + PRODUKTER
   top: 20px;
   width: 30px;
 }
+
+footer{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
