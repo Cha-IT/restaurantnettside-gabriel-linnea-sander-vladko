@@ -156,3 +156,11 @@ footer{
   flex-wrap: wrap;
   margin-top: 20px;
 }
+
+#landingpage{
+  background-image: url(/assets/pizzalandingpage.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 650px;
+  margin-top: -20px;
+}
