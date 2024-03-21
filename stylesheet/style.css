@@ -217,3 +217,7 @@ a:active {
 a:visited {
   color: black;
 }
+
+html{
+  scroll-behavior: smooth;
+}
