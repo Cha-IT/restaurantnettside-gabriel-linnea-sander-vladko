@@ -71,6 +71,13 @@ function oppdaterHandlekurv() {
     ProduktBakgrunn.style.visibility = "hidden";
     antallProdukter.style.visibility = "hidden";
   }
+
+  if(ProduktTall >= 10) {
+    antallProdukter.style.left = "5.5px"
+  }
+  if(ProduktTall >= 20) {
+    antallProdukter.style.left = "4px"
+  }
 }
 
 function nullstillHandlekurv() {
@@ -85,14 +92,17 @@ function VisHandlekurv() {
 
   HandlekurvEl.innerHTML = ''
   cartItems.forEach(produkt => {
-    new CartProdukt(produkt);
+    new CartProdukt(produkt, oppdaterHandlekurv, LukkHandleKurv);
   });
 
   const betalBtn = document.createElement("button");
   betalBtn.textContent = "Gå til handlekurv";
   betalBtn.classList.add("BetalBtn");
-  HandlekurvEl.appendChild(betalBtn);
-  HandlekurvEl.style.visibility = "visible";
+
+  if(cartItems.length >= 1) {
+    HandlekurvEl.appendChild(betalBtn);
+    HandlekurvEl.style.visibility = "visible";
+  }
 
   function LukkHandleKurv() {
     HandlekurvEl.style.visibility = "hidden";
@@ -106,6 +116,8 @@ class CartProdukt {
     this.produktnavn = produktInfo.navn;
     this.bilde = produktInfo.bilde;
     this.antallProdukt = produktInfo.antall;
+    this.oppdaterHandlekurv = oppdaterHandlekurv;
+    this.LukkHandleKurv();
     this.opprettHandlekurvProdukt();
     this.appendProdukter();
   }
@@ -126,13 +138,36 @@ class CartProdukt {
     this.Navn.textContent = this.produktnavn;
 
     this.Antall = document.createElement("p");
+    this.Antall.style.fontFamily = "Poppins", "sans-serif"
+    this.Antall.style.fontSize = "15px"
     this.Antall.textContent = "Antall: " +  this.antallProdukt;
+
+    this.fjern = document.createElement("p");
+    this.fjern.textContent = "Fjern";
+    this.fjern.style.cursor = "pointer";
+    this.fjern.style.width = "40px";
+    this.fjern.addEventListener("click", () => {
+      this.container.remove();
+      cartItems = cartItems.filter(item => item.navn !== this.produktnavn);
+      sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
+      oppdaterHandlekurv();
+
+      if(cartItems.length <= 0) {
+        this.LukkHandleKurv();
+      }
+    })
   }
 
   appendProdukter() {
-    this.TekstContainer.append(this.Navn, this.Antall)
+    this.TekstContainer.append(this.Navn, this.Antall, this.fjern)
     this.CartProduct.append(this.ProduktBilde, this.TekstContainer)
     this.container.appendChild(this.CartProduct)
     HandlekurvEl.append(this.container)
+  }
+
+  LukkHandleKurv() {
+    HandlekurvEl.style.visibility = "hidden";
+    HandlekurvBtn.removeEventListener("click", this.LukkHandleKurv);
+    HandlekurvBtn.addEventListener("click", VisHandlekurv);
   }
 }
