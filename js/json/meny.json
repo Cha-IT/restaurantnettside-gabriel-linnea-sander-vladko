@@ -1,7 +1,7 @@
 [
   {
-    "ProduktNavn": "Hamburger",
-    "ProduktBeskrivelse": "Dette er en helt forferdelig burger",
+    "ProduktNavn": "Pepperoni Pizza",
+    "ProduktBeskrivelse": "En klassisk pepperoni pizza med masse mozzarella og pepperoni. Et klassiskt valg hos våre kunder.",
     "Bilde": "/assets/test123.jpg",
     "ProduktPris": "299-, KR"
   },
