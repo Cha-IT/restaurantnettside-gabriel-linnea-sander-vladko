@@ -196,4 +196,28 @@ footer > div > p:hover {
   background-size: cover;
   height: 650px;
   margin-top: -20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: 38px;
+  font-family: "Poppins";
+}
+
+a{
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+html{
+  scroll-behavior: smooth;
 }
