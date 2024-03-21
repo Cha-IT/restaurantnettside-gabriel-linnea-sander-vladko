@@ -82,7 +82,7 @@ OM OSS
   align-items: center;
   flex-direction: column;
   position: relative;
-  top: -65px;
+  top: -20px;
 }
 
 #OmOss-Header > div:last-child {
