@@ -65,7 +65,8 @@ nav {
   gap: 20px;
 }
 
-nav > p:hover {
+nav > p:hover,
+nav > a:hover {
   text-decoration: underline;
   cursor: pointer;
 }
