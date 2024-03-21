@@ -87,6 +87,11 @@ function VisHandlekurv() {
   cartItems.forEach(produkt => {
     new CartProdukt(produkt);
   });
+
+  const betalBtn = document.createElement("button");
+  betalBtn.textContent = "Gå til handlekurv";
+  betalBtn.classList.add("BetalBtn");
+  HandlekurvEl.appendChild(betalBtn);
   HandlekurvEl.style.visibility = "visible";
 
   function LukkHandleKurv() {
