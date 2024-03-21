@@ -58,7 +58,7 @@ nav {
   font-size: 20px;
   position: relative;
   left: -50px;
-  top: 15px;
+  top: 40px;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -190,8 +190,9 @@ footer > div > p:hover {
   font-weight: 600;
 }
 
+
 #landingpage{
-  background-image: url(/assets/pizzalandingpage.jpeg);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(/assets/pizzalandingpage.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
