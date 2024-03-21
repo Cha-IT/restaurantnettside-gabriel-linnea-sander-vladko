@@ -92,13 +92,14 @@ function VisHandlekurv() {
 
   HandlekurvEl.innerHTML = ''
   cartItems.forEach(produkt => {
-    new CartProdukt(produkt, oppdaterHandlekurv, LukkHandleKurv);
+    new CartProdukt(produkt, oppdaterHandlekurv);
   });
 
   const betalBtn = document.createElement("button");
   betalBtn.textContent = "Gå til handlekurv";
   betalBtn.classList.add("BetalBtn");
 
+  
   if(cartItems.length >= 1) {
     HandlekurvEl.appendChild(betalBtn);
     HandlekurvEl.style.visibility = "visible";
@@ -108,6 +109,7 @@ function VisHandlekurv() {
     HandlekurvEl.style.visibility = "hidden";
     HandlekurvBtn.removeEventListener("click", LukkHandleKurv);
     HandlekurvBtn.addEventListener("click", VisHandlekurv);
+    oppdaterHandlekurv();
   }
 }
 
@@ -117,7 +119,7 @@ class CartProdukt {
     this.bilde = produktInfo.bilde;
     this.antallProdukt = produktInfo.antall;
     this.oppdaterHandlekurv = oppdaterHandlekurv;
-    this.LukkHandleKurv();
+    this.LukkHandleKurv = this.LukkHandleKurv;
     this.opprettHandlekurvProdukt();
     this.appendProdukter();
   }
@@ -152,10 +154,10 @@ class CartProdukt {
       sessionStorage.setItem("cartItems", JSON.stringify(cartItems));
       oppdaterHandlekurv();
 
-      if(cartItems.length <= 0) {
+      if(cartItems.length == 0) {
         this.LukkHandleKurv();
       }
-    })
+    });
   }
 
   appendProdukter() {

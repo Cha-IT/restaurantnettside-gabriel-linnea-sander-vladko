@@ -73,6 +73,70 @@ nav > a:hover {
 
 /*
 
+OM OSS
+
+*/
+
+#OmOss-Header > div:first-child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: -20px;
+}
+
+#OmOss-Header > div:last-child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#OmOss-Header > div:last-child > p {
+  max-width: max-content;
+  font-size: 14px;
+  font-style: italic;
+}
+
+#OmOss-Header > div > p {
+  width: 600px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#OmOss-Header > div > h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+#OmOss-Header > div > img {
+  width: 500px;
+}
+
+.OmOss-Container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.OmOss-Container > h3 {
+  position: relative;
+  top: 30px;
+  font-size: 27px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.OmOss-Container > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+
+/*
+
 MENY + PRODUKTER
 
 */
