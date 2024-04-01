@@ -1,0 +1,26 @@
+[
+  {
+    "ProduktNavn": "Pepperoni Pizza",
+    "ProduktBeskrivelse": "En klassisk pepperoni pizza med masse mozzarella og pepperoni. Et klassiskt valg hos våre kunder.",
+    "Bilde": "/assets/pizza1.jpg",
+    "ProduktPris": "200-, KR"
+  },
+  {
+    "ProduktNavn": "Sander's Spesial",
+    "ProduktBeskrivelse": "Sander's spesial består av skinke, løk og tomat. En lett blanding av skinke og grønnsaker.",
+    "Bilde": "/assets/pizza2.png",
+    "ProduktPris": "225-, KR"
+  },
+  {
+    "ProduktNavn": "Glutenfri vegetar Pizza",
+    "ProduktBeskrivelse": "Et grønt valg for pizza. Vegetar pizzaen består av tomat, pesto og parmesan.",
+    "Bilde": "/assets/pizza3.png",
+    "ProduktPris": "190-, KR"
+  },
+  {
+    "ProduktNavn": "Plukk & Mix",
+    "ProduktBeskrivelse": "Design din egen pizza med opptil 4 forskjellige toppings. Velg mellom tynn, tjukk eller glutenfri bunn.",
+    "Bilde": "/assets/pizza4.png",
+    "ProduktPris": "250-, KR"
+  }
+]
